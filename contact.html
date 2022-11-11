@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design-Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <section class="new">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="my pic"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+              </div>  
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> PLEASE FILL BELLOW FORM</h1>
+    </section>
+      
+    <section class="contact-us">
+        <form  method="post">
+         
+            <label class="name :" >Full Name</label>
+            <input type="text" ><br><br>
+            <label class="name :">Address   </label>
+            <input type="text" "><br><br>
+            <label class="name :">Date of birth</label>
+            <input type="date" ><br>
+            <label class="name :" value="yes">do you have previos knowledge on IT :</label>
+             <input type="radio" id="yes" value="Yes">
+             <label for="yes">Yes</label>
+             <input type="radio" id="no" value="NO">
+             <label for="no">NO</label><br><br>
+             <p>courses do you want</p>
+
+            
+             <select id="courses">
+                <option value="java beginner">java beginner</option>
+                <option value="python beginner">python beginner</option>
+                <option value="web development beginner">web development beginner</option>
+                <option value="java advanced-level">ADVANCED java</option>
+                <option value="java beginner">ADVANCED python</option>
+                <option value="java beginner">ADVANCED JAVASCRIPT</option>
+                
+                </select><br><br> 
+             <label for="tel">telephone number</label>
+             <input type="text" id="tel">
+             <br> <br><br>
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </section>
+        
+        
+
+        <!--------------------------------------FOOOTER------------------------------------->
+        <section class="FOOTER">
+            <h4>ABOUT US</h4>
+            <p>Contact for more detalis to search our Website</p>
+         <div class="icons">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <p>Made with <i class="fa fa-industry" aria-hidden="true"></i> By industry Tutorials</p>
+        </div>
+        </section>
+       
+
+    <!---------JavaScript Troggle Menu--------->
+     <script>
+        var navLinks=document.getElementById("navLinks");
+        
+        function showMenu(){
+           navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+
+     </script>
+
+     
+
+</body>
+</html>
